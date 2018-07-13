@@ -12,6 +12,8 @@
 		3573051020F7956A0030E8BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3573050E20F7956A0030E8BE /* Main.storyboard */; };
 		3573051220F7956C0030E8BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3573051120F7956C0030E8BE /* Assets.xcassets */; };
 		3573051520F7956C0030E8BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3573051320F7956C0030E8BE /* LaunchScreen.storyboard */; };
+		3573052120F796BF0030E8BE /* CWCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3573052020F796BF0030E8BE /* CWCollectionView.swift */; };
+		3573052420F79A800030E8BE /* CWCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3573052320F79A800030E8BE /* CWCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3573051120F7956C0030E8BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3573051420F7956C0030E8BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3573051620F7956C0030E8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3573052020F796BF0030E8BE /* CWCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWCollectionView.swift; sourceTree = "<group>"; };
+		3573052320F79A800030E8BE /* CWCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,56 @@
 		3573050920F7956A0030E8BE /* CWCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				3573050A20F7956A0030E8BE /* AppDelegate.swift */,
-				3573050C20F7956A0030E8BE /* ViewController.swift */,
-				3573050E20F7956A0030E8BE /* Main.storyboard */,
-				3573051120F7956C0030E8BE /* Assets.xcassets */,
-				3573051320F7956C0030E8BE /* LaunchScreen.storyboard */,
-				3573051620F7956C0030E8BE /* Info.plist */,
+				3573051D20F796740030E8BE /* Exemple */,
+				3573051C20F796680030E8BE /* CWCollectionView */,
 			);
 			path = CWCollectionView;
+			sourceTree = "<group>";
+		};
+		3573051C20F796680030E8BE /* CWCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3573052020F796BF0030E8BE /* CWCollectionView.swift */,
+			);
+			path = CWCollectionView;
+			sourceTree = "<group>";
+		};
+		3573051D20F796740030E8BE /* Exemple */ = {
+			isa = PBXGroup;
+			children = (
+				3573050A20F7956A0030E8BE /* AppDelegate.swift */,
+				3573051F20F796A90030E8BE /* Scenes */,
+				3573051E20F7969E0030E8BE /* Ressources */,
+			);
+			path = Exemple;
+			sourceTree = "<group>";
+		};
+		3573051E20F7969E0030E8BE /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				3573051620F7956C0030E8BE /* Info.plist */,
+				3573051120F7956C0030E8BE /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		3573051F20F796A90030E8BE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3573052220F79A710030E8BE /* Cells */,
+				3573051320F7956C0030E8BE /* LaunchScreen.storyboard */,
+				3573050E20F7956A0030E8BE /* Main.storyboard */,
+				3573050C20F7956A0030E8BE /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3573052220F79A710030E8BE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3573052320F79A800030E8BE /* CWCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3573052120F796BF0030E8BE /* CWCollectionView.swift in Sources */,
 				3573050D20F7956A0030E8BE /* ViewController.swift in Sources */,
+				3573052420F79A800030E8BE /* CWCollectionViewCell.swift in Sources */,
 				3573050B20F7956A0030E8BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZM6S3PQ5K;
-				INFOPLIST_FILE = CWCollectionView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CWCollectionView/Exemple/Ressources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZM6S3PQ5K;
-				INFOPLIST_FILE = CWCollectionView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CWCollectionView/Exemple/Ressources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
