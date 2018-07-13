@@ -14,5 +14,5 @@ UICollectionView subclass to easily setup a collection view with a given number 
  
   s.ios.deployment_target = '9.0'
   s.source_files = 'CWCollectionView/CWCollectionView/CWCollectionView.swift'
- 
+  s.swift_version = '4.1'
 end
