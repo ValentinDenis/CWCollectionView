@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'CWCollectionView'
-  s.version          = '0.1.0'
+  s.version          = '0.3.0'
   s.summary          = 'Easily create collection views with a desired number of columns'
  
   s.description      = <<-DESC
