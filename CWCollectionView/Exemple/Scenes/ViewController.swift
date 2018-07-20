@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController : CWCollectionViewDelegate {
-    func numberOfCulumns() -> Int {
+    func numberOfColumns() -> Int {
         return 2
     }
     
