@@ -14,7 +14,7 @@ Just use `CWCollectionView` as a class for your collection view (from storyboard
 Make your VC implement `CWCollectionViewDelegate`
 These methods need to be implemented:
 ```swift
-func numberOfCulumns() -> Int
+func numberOfColumns() -> Int
 func itemHeightRatio() -> CGFloat
 func sectionInsets() -> UIEdgeInsets
 func itemMinimumMargin() -> CGFloat
